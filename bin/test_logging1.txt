@@ -1,0 +1,1 @@
+[05-05-2020 15:53:27.275963][PID=25259][ERR][test/test_logger.cpp:65]This is another log

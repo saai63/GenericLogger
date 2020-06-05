@@ -1,1 +1,0 @@
-[05-05-2020 15:53:27.278501][PID=25259][TID=25260][ERR][test/test_logger.cpp:83]This is thread log

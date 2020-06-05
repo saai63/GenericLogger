@@ -1,6 +1,0 @@
-[05-05-2020 15:53:27.273231][PID=25259][ERR][test/test_logger.cpp:35]This is a log
-[05-05-2020 15:53:27.273258][PID=25259][WRN][test/test_logger.cpp:36]This is a log
-[05-05-2020 15:53:27.273312][PID=25259][ERR][test/test_logger.cpp:51]This is a log
-[05-05-2020 15:53:27.273353][PID=25259][WRN][test/test_logger.cpp:52]This is a log
-[05-05-2020 15:53:27.273370][PID=25259][INFO][test/test_logger.cpp:53]This is a log
-[05-05-2020 15:53:27.273402][PID=25259][DBG][test/test_logger.cpp:54]This is a log

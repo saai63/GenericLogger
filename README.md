@@ -1,4 +1,4 @@
-## CI status
+## Build status
 
 ![CI status](https://github.com/saai63/GenericLogger/workflows/Build_Product/badge.svg
 )

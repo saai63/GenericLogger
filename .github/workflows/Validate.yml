@@ -21,17 +21,20 @@ jobs:
             cc: "clang-9", cxx: "clang++-9"
           }
 
-steps:
-  - uses: actions/checkout@v2
-    with:
-      submodules: "recursive"
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
 
-  - name: Install Linux dependencies
-  if: runner.os == 'Linux'
-        run: sudo apt-get install gtest gtest-dev
-  
-  - name: Build
-    run : mkdir build; cd build; cmake ..; make;
+      - name: Install Linux dependencies
+        if: runner.os == 'Linux'
+        run: sudo apt-get install libgtest-dev cmake;
 
-  - name : Run tests
-    run : ./Generic_Logger_test
+      - name: Build gtest
+        run: cd /usr/src/gtest; sudo cmake CMakeLists.txt; sudo make; sudo cp *.a /usr/lib; 
+      
+      - name: Build
+        run : mkdir build; cd build; cmake ..; make;
+
+      - name : Run tests
+        run : pwd;cd build; ./Generic_Logger_test;

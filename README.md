@@ -17,15 +17,15 @@ Make sure that the parent folders exist. In case there is any issue with opening
 If a log file is already available, new logs are appended to the same.
 
 # Building
-Running the command 'make clean all' should build the libraries and test application.
-Please make sure that you have gtest installed as we use gtest for unit tests.
-If you wish to build only the logger library, you may run 'make clean logger'
+* mkdir build # Create a temporary directory
+* cd build
+* cmake .. # Invoke cmake to create the Makefile
+* make # Build
 
-# Unit tests and code coverage report
-Once you have build the library and unit test application, run the script 'run_tests.sh'.
-This will generate the code coverage report under 'Report' folder.
-Open Report/index.html in your browser to view the coverage.
+# Unit tests
+* Inside build folder, you will find an executable Generic_Logger_test. Executing that exe will execute the tests.
 
 # TODO
 * Add test cases for multi-process and multi-thread scenario
 * Add doxygen documentation
+* Add coverage options to CMake and workflows

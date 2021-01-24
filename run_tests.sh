@@ -9,6 +9,6 @@ cd bin
 cd ..
 echo "Generating coverage report"
 lcov --capture --directory ./ -o cov.info
-lcov --remove cov.info -o cov1.info '/usr/include/c++/5/*' 'gtest/*'
+lcov --remove cov.info -o cov1.info '/usr/*' 'gtest/*'
 genhtml cov1.info -o Report
 rm -rf *.gcno *.gcda *.info

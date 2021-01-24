@@ -1,3 +1,8 @@
+## CI status
+
+![CI status](https://github.com/saai63/GenericLogger/workflows/Build_Product/badge.svg
+)
+
 # GenericLogger
 A generic logger with support for logging to files with timestamp and PID, TID
 The logger supports logging to console and also files.

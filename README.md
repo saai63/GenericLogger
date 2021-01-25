@@ -1,6 +1,6 @@
 
 ![Build](https://github.com/saai63/GenericLogger/workflows/Build_Project/badge.svg
-)                     [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+)                     [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)           [![codecov.io](https://codecov.io/github/saai63/GenericLogger/coverage.svg?branch=master)](https://codecov.io/github/saai63/GenericLogger?branch=master)
 
 # GenericLogger
 A generic logger with support for logging to files with timestamp and PID, TID

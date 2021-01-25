@@ -39,5 +39,5 @@ jobs:
           cd bin; lcov --directory ../build/ --capture --output-file coverage.info
           lcov --remove coverage.info '/usr/*' "${HOME}"'/.cache/*' --output-file coverage.info
           lcov --list coverage.info
-          export CODECOV_TOKEN="33cd74a9-f59c-4eca-aeed-c70aa55866e5"
+          export CODECOV_TOKEN=${{ secrets.CODECOV_TOKEN }}
           bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
